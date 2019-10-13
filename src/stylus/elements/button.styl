@@ -1,0 +1,57 @@
+/**
+ * elements/button.styl
+ * @author kaminoctem
+ */
+
+$button-forecolor ?= $color-grey-darker
+$button-backcolor ?= $color-white
+$button-bordercolor ?= $color-grey-lighter
+$button-border-radius ?= 4px
+$button-hover-forecolor ?= $color-grey-darker
+$button-hover-backcolor ?= $color-grey-darker
+$button-hover-bordercolor ?= $color-grey-light
+
+$button-focus-forecolor ?= $color-grey-darker
+$button-focus-backcolor ?= $color-grey-darker
+$button-focus-bordercolor ?= $color-link
+$button-focus-box-shadow-size ?= 0 0 0 0.125em
+$button-focus-box-shadow-color ?= alpha($color-link, 0.25)
+
+$button-active-forecolor ?= $color-grey-darker
+$button-active-backcolor ?= $color-grey-darker
+$button-active-bordercolor ?= $color-grey-dark
+
+$button-disabled-forecolor ?= $color-grey-darker
+$button-disabled-backcolor ?= $color-white
+$button-disabled-bordercolor ?= $color-grey-lighter
+$button-disabled-box-shadow ?= none
+$button-disabled-opacity ?= 0.5
+
+.button
+  @extend.control
+  background-color: $button-backcolor
+  border-color: $button-bordercolor
+
+  &:hover,
+  &.is-hovered
+    border-color: $button-hover-bordercolor
+    color: $button-hover-forecolor
+
+  &:focus,
+  &.is-focused
+    border-color: $button-focus-bordercolor
+    color: $button-focus-forecolor
+    &:not(:active)
+      box-shadow: $button-focus-box-shadow-size $button-focus-box-shadow-color
+
+  &:active,
+  &.is-active
+    border-color: $button-active-bordercolor
+    color: $button-active-forecolor
+
+  &[disabled],
+  fieldset[disabled]
+    background-color: $button-disabled-backcolor
+    border-color: $button-disabled-bordercolor
+    box-shadow: $button-disabled-box-shadow
+    opacity: $button-disabled-opacity

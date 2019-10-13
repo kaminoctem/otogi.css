@@ -1,0 +1,977 @@
+/**
+ * variables/color.styl
+ * @author kaminoctem
+ */
+
+/** Japanese Colors(和色) */
+// 桜色
+$color-sakurairo ?= #fef4f4
+// 薄桜
+$color-usuzakura ?= #fdeff2
+// 桜鼠
+$color-sakuranezu ?= #e9dfe5
+// 鴇鼠
+$color-tokinezu ?= #e4d2d8
+// 虹色
+$color-nijiiro ?= #f6bfbc
+// 珊瑚色
+$color-sangoiro ?= #f5b1aa
+// 一斤染
+$color-ikkonzome ?= #f5b199
+// 宍色
+$color-shishiiro ?= #efab93
+// 紅梅色
+$color-kobaiiro ?= #f2a0a1
+// 薄紅
+$color-usubeni ?= #f0908d
+// 甚三紅
+$color-jinzamomi ?= #ee827c
+// 桃色
+$color-momoiro ?= #f09199
+// 鴇色
+$color-tokiiro ?= #f4b3c2
+// 撫子色
+$color-nadeshikoiro ?= #eebbcb
+// 灰梅
+$color-haiume ?= #e8d3c7
+// 灰桜
+$color-haizakura ?= #e8d3d1
+// 淡紅藤
+$color-awabenifuji ?= #e6cde3
+// 石竹色
+$color-sekichikuiro ?= #e5abbe
+// 薄紅梅
+$color-usukobai ?= #e597b2
+// 桃花色
+$color-momohanairo ?= #e198b4
+// 水柿
+$color-mizugaki ?= #e4ab9b
+// ときがら茶
+$color-tokigaracha ?= #e09e87
+// 退紅
+$color-arazome ?= #d69090
+// 薄柿
+$color-usugaki ?= #d4acad
+// 長春色
+$color-choshuniro ?= #c97586
+// 梅鼠
+$color-umenezu ?= #c099a0
+// 鴇浅葱
+$color-tokiasagi ?= #b88884
+// 梅染
+$color-umezome ?= #b48a76
+// 蘇芳香
+$color-suoko ?= #a86965
+// 浅蘇芳
+$color-asasuo ?= #a25768
+// 真朱
+$color-masoo ?= #ec6d71
+// 赤紫
+$color-akamurasaki ?= #eb6ea5
+// 躑躅色
+$color-tsutsujiiro ?= #e95295
+// 牡丹色
+$color-botaniro ?= #e7609e
+// 今様色
+$color-imayoiro ?= #d0576b
+// 中紅
+$color-nakabeni ?= #c85179
+// 薔薇色
+$color-barairo ?= #e9546b
+// 韓紅
+$color-karakurenai ?= #e95464
+// 銀朱
+$color-ginshu ?= #c85554
+// 赤紅
+$color-akabeni ?= #c53d43
+// 紅緋
+$color-benihi ?= #e83929
+// 赤
+$color-aka ?= #e60033
+// 猩々緋
+$color-shojohi ?= #e2041b
+// 紅
+$color-kurenai ?= #d7003a
+// 深緋
+$color-kokihi ?= #c9171e
+// 緋色
+$color-hiiro ?= #d3381c
+// 赤丹
+$color-akani ?= #ce5242
+// 紅赤
+$color-beniaka ?= #d9333f
+// 臙脂
+$color-enji ?= #b94047
+// 朱・緋
+$color-ake ?= #ba2636
+// 茜色
+$color-akaneiro ?= #b7282e
+// 紅海老茶
+$color-beniebicha ?= #a73836
+// 蘇芳
+$color-suo ?= #9e3d3f
+// 真紅
+$color-shinku ?= #a22041
+// 濃紅
+$color-koikurenai ?= #a22041
+// 象牙色
+$color-zogeiro ?= #f8f4e6
+// 練色
+$color-neriiro ?= #ede4cd
+// 灰白色
+$color-kaihakushoku ?= #e9e4d4
+// 蒸栗色
+$color-mushiguriiro ?= #ebe1a9
+// 女郎花
+$color-ominaeshi ?= #f2f2b0
+// 枯草色
+$color-karekusairo ?= #e4dc8a
+// 淡黄
+$color-tanko ?= #f8e58c
+// 白茶
+$color-shiracha ?= #ddbb99
+// 赤白橡
+$color-akashirotsurubami ?= #d7a98c
+// 洗柿
+$color-araigaki ?= #f2c9ac
+// 鳥の子色
+$color-torinokoiro ?= #fff1cf
+// 蜂蜜色
+$color-hachimitsuiro ?= #fddea5
+// 肌色
+$color-hadairo ?= #fce2c4
+// 薄卵色
+$color-usutamagoiro ?= #fde8d0
+// 雄黄
+$color-yuo ?= #f9c89b
+// 洒落柿
+$color-sharegaki ?= #f7bd8f
+// 赤香
+$color-akako ?= #f6b894
+// 砥粉色
+$color-tonokoiro ?= #f4dda5
+// 肉色
+$color-nikuiro ?= #f1bf99
+// 人色
+$color-hitoiro ?= #f1bf99
+// 丁子色
+$color-chojiiro ?= #efcd9a
+// 香色
+$color-koiro ?= #efcd9a
+// 薄香
+$color-usuko ?= #f0cfa0
+// 浅黄
+$color-usuki ?= #edd3a1
+// 枯色
+$color-kareiro ?= #e0c38c
+// 淡香
+$color-usuko ?= #f3bf88
+// 杏色
+$color-anzuiro ?= #f7b977
+// 東雲色
+$color-shinonomeiro ?= #f19072
+// 曙色
+$color-akebonoiro ?= #f19072
+// 珊瑚朱色
+$color-sangoshuiro ?= #ee836f
+// 深支子
+$color-kokikuchinashi ?= #eb9b6f
+// 纁
+$color-sohi ?= #e0815e
+// 浅緋
+$color-usukihi ?= #df7163
+// 真赭
+$color-masoho ?= #d57c6b
+// 洗朱
+$color-araishu ?= #d0826c
+// 遠州茶
+$color-enshucha ?= #ca8269
+// 紅樺色
+$color-benikabairo ?= #bb5548
+// 赭
+$color-soho ?= #ab6953
+// 小豆色
+$color-azukiiro ?= #96514d
+// 枯茶
+$color-karacha ?= #8d6449
+// 飴色
+$color-ameiro ?= #deb068
+// 駱駝色
+$color-rakudairo ?= #bf794e
+// 土色
+$color-tsuchiiro ?= #bc763c
+// 黄唐茶
+$color-kigaracha ?= #b98c46
+// 桑染
+$color-kuwazome ?= #b79b5b
+// 櫨色
+$color-hajiiro ?= #b77b57
+// 黄橡
+$color-kitsurubami ?= #b68d4c
+// 丁字染
+$color-chojizome ?= #ad7d4c
+// 香染
+$color-kozome ?= #ad7d4c
+// 枇杷茶
+$color-biwacha ?= #ae7c4f
+// 芝翫茶
+$color-shikancha ?= #ad7e4e
+// 焦香
+$color-kogareko ?= #ae7c58
+// 胡桃色
+$color-kurumiiro ?= #a86f4c
+// 渋紙色
+$color-shibukamiiro ?= #946243
+// 朽葉色
+$color-kuchibairo ?= #917347
+// 桑茶
+$color-kuwacha ?= #956f29
+// 路考茶
+$color-rokocha ?= #8c7042
+// 国防色
+$color-kokuboshoku ?= #7b6c3e
+// 伽羅色
+$color-kyarairo ?= #d8a373
+// 江戸茶
+$color-edocha ?= #cd8c5c
+// 樺色
+$color-kabairo ?= #cd5e3c
+// 紅鬱金
+$color-beniukon ?= #cb8347
+// 土器色
+$color-kawarakeiro ?= #c37854
+// 狐色
+$color-kitsuneiro ?= #c38743
+// 黄土色
+$color-odoiro ?= #c39143
+// 琥珀色
+$color-kohakuiro ?= #bf783a
+// 赤茶
+$color-akacha ?= #bb5535
+// 代赭
+$color-taisha ?= #bb5520
+// 煉瓦色
+$color-rengairo ?= #b55233
+// 雀茶
+$color-suzumecha ?= #aa4f37
+// 団十郎茶
+$color-danjurocha ?= #9f563a
+// 柿渋色
+$color-kakishibuiro ?= #9f563a
+// 紅鳶
+$color-benitobi ?= #9a493f
+// 灰茶
+$color-haicha ?= #98623c
+// 茶色
+$color-chairo ?= #965042
+// 檜皮色
+$color-hiwadairo ?= #965036
+// 鳶色
+$color-tobiiro ?= #95483f
+// 柿茶
+$color-kakicha ?= #954e2a
+// 弁柄色
+$color-bengarairo ?= #8f2e14
+// 赤錆色
+$color-akasabiiro ?= #8a3319
+// 褐色
+$color-kasshoku ?= #8a3b00
+// 栗梅
+$color-kuriume ?= #852e19
+// 紅檜皮
+$color-benihihada ?= #7b4741
+// 海老茶
+$color-ebicha ?= #773c30
+// 唐茶
+$color-karacha ?= #783c1d
+// 栗色
+$color-kuriiro ?= #762f07
+// 赤銅色
+$color-shakudoiro ?= #752100
+// 錆色
+$color-sabiiro ?= #6c3524
+// 赤褐色
+$color-sekkasshoku ?= #683f36
+// 茶褐色
+$color-chakasshoku ?= #664032
+// 栗皮茶
+$color-kurikawacha ?= #6d3c32
+// 黒茶
+$color-kurocha ?= #583822
+// 葡萄茶
+$color-ebicha ?= #6c2c2f
+// 葡萄色
+$color-ebiiro ?= #640125
+// 萱草色
+$color-kanzoiro ?= #f8b862
+// 柑子色
+$color-kojiiro ?= #f6ad49
+// 金茶
+$color-kincha ?= #f39800
+// 蜜柑色
+$color-mikaniro ?= #f08300
+// 鉛丹色
+$color-entaniro ?= #ec6d51
+// 黄丹
+$color-oni ?= #ee7948
+// 柿色
+$color-kakiiro ?= #ed6d3d
+// 黄赤
+$color-kiaka ?= #ec6800
+// 人参色
+$color-ninjiniro ?= #ec6800
+// 橙色
+$color-daidaiiro ?= #ee7800
+// 照柿
+$color-terigaki ?= #eb6238
+// 赤橙
+$color-akadaidai ?= #ea5506
+// 金赤
+$color-kinaka ?= #ea5506
+// 朱色
+$color-shuiro ?= #eb6101
+// 小麦色
+$color-komugiiro ?= #e49e61
+// 丹色
+$color-niiro ?= #e45e32
+// 黄茶
+$color-kicha ?= #e17b34
+// 肉桂色
+$color-nikkeiiro ?= #dd7a56
+// 赤朽葉色
+$color-akakuchibairo ?= #db8449
+// 黄櫨染
+$color-korozen ?= #d66a35
+// 蒲公英色
+$color-tampopoiro ?= #ffd900
+// 黄色
+$color-kiiro ?= #ffd900
+// 中黄
+$color-chuki ?= #ffea00
+// 菜の花色
+$color-nanohanairo ?= #ffec47
+// 黄檗色
+$color-kihadairo ?= #fef263
+// 卵色
+$color-tamagoiro ?= #fcd575
+// 花葉色
+$color-hanabairo ?= #fbd26b
+// 刈安色
+$color-kariyasuiro ?= #f5e56b
+// 玉蜀黍色
+$color-tomorokoshiiro ?= #eec362
+// 金糸雀色
+$color-kanariairo ?= #ebd842
+// 黄支子色
+$color-kikuchinashiiro ?= #ffdb4f
+// 支子色
+$color-kuchinashiiro ?= #fbca4d
+// 向日葵色
+$color-himawariiro ?= #fcc800
+// 山吹色
+$color-yamabukiiro ?= #f8b500
+// 鬱金色
+$color-ukoniro ?= #fabf14
+// 藤黄
+$color-too ?= #f7c114
+// 金色
+$color-konjiki ?= #e6b422
+// 黄金
+$color-kogane ?= #e6b422
+// 櫨染
+$color-hajizome ?= #d9a62e
+// 黄朽葉色
+$color-kikuchibairo ?= #d3a243
+// 山吹茶
+$color-yamabukicha ?= #c89932
+// 芥子色
+$color-karashiiro ?= #d0af4c
+// 豆がら茶
+$color-mamegaracha ?= #8b968d
+// 麹塵
+$color-kikujin ?= #6e7955
+// 山鳩色
+$color-yamabatoiro ?= #767c6b
+// 利休鼠
+$color-rikyunezumi ?= #888e7e
+// 海松茶
+$color-mirucha ?= #5a544b
+// 藍海松茶
+$color-aimirucha ?= #56564b
+// 藍媚茶
+$color-aikobicha ?= #555647
+// 千歳茶
+$color-sensaicha ?= #494a41
+// 岩井茶
+$color-iwaicha ?= #6b6f59
+// 仙斎茶
+$color-sensaicha ?= #474b42
+// 黒緑
+$color-kuromidori ?= #333631
+// 柳煤竹
+$color-yanagisusutake ?= #5b6356
+// 樺茶色
+$color-kabachairo ?= #726250
+// 空五倍子色
+$color-utsubushiiro ?= #9d896c
+// 生壁色
+$color-namakabeiro ?= #94846a
+// 肥後煤竹
+$color-higosusutake ?= #897858
+// 媚茶
+$color-kobicha ?= #716246
+// 白橡
+$color-shirotsurubami ?= #cbb994
+// 亜麻色
+$color-amairoflax ?= #d6c6af
+// 榛色
+$color-hashibamiiro ?= #bfa46f
+// 灰汁色
+$color-akuiro ?= #9e9478
+// 利休茶
+$color-rikyucha ?= #a59564
+// 鶯茶
+$color-uguisucha ?= #715c1f
+// 木蘭色
+$color-mokuranjiki ?= #c7b370
+// 砂色
+$color-sunairo ?= #dcd3b2
+// 油色
+$color-aburairo ?= #a19361
+// 利休色
+$color-rikyuiro ?= #8f8667
+// 梅幸茶
+$color-baikocha ?= #887938
+// 璃寛茶
+$color-rikancha ?= #6a5d21
+// 黄海松茶
+$color-kimirucha ?= #918754
+// 菜種油色
+$color-nataneyuiro ?= #a69425
+// 青朽葉
+$color-aokuchiba ?= #ada250
+// 根岸色
+$color-negishiiro ?= #938b4b
+// 鶸茶
+$color-hiwacha ?= #8c8861
+// 柳茶
+$color-yanagicha ?= #a1a46d
+// 海松色
+$color-miruiro ?= #726d40
+// 鶯色
+$color-uguisuiro ?= #928c36
+// 緑黄色
+$color-ryokuoshoku ?= #dccb18
+// 鶸色
+$color-hiwairo ?= #d7cf3a
+// 抹茶色
+$color-matchairo ?= #c5c56a
+// 若草色
+$color-wakakusairo ?= #c3d825
+// 黄緑
+$color-kimidori ?= #b8d200
+// 若芽色
+$color-wakameiro ?= #e0ebaf
+// 若菜色
+$color-wakanairo ?= #d8e698
+// 若苗色
+$color-wakanaeiro ?= #c7dc68
+// 青丹
+$color-aoni ?= #99ab4e
+// 草色
+$color-kusairo ?= #7b8d42
+// 苔色
+$color-kokeiro ?= #69821b
+// 萌黄
+$color-moegi ?= #aacf53
+// 苗色
+$color-naeiro ?= #b0ca71
+// 若葉色
+$color-wakabairo ?= #b9d08b
+// 松葉色
+$color-matsubairo ?= #839b5c
+// 夏虫色
+$color-natsumushiiro ?= #cee4ae
+// 鶸萌黄
+$color-hiwamoegi ?= #82ae46
+// 柳色
+$color-yanagiiro ?= #a8c97f
+// 青白橡
+$color-aoshirotsurubami ?= #9ba88d
+// 柳鼠
+$color-yanaginezu ?= #c8d5bb
+// 裏葉柳
+$color-urahayanagi ?= #c1d8ac
+// 山葵色
+$color-wasabiiro ?= #a8bf93
+// 老竹色
+$color-oitakeiro ?= #769164
+// 白緑
+$color-byakuroku ?= #d6e9ca
+// 淡萌黄
+$color-usumoegi ?= #93ca76
+// 柳染
+$color-yanagizome ?= #93b881
+// 薄萌葱
+$color-usumoegi ?= #badcad
+// 深川鼠
+$color-fukagawanezumi ?= #97a791
+// 若緑
+$color-wakamidori ?= #98d98e
+// 浅緑
+$color-asamidori ?= #88cb7f
+// 薄緑
+$color-usumidori ?= #69b076
+// 青鈍
+$color-aonibi ?= #6b7b6e
+// 青磁鼠
+$color-seijinezu ?= #bed2c3
+// 薄青
+$color-usuao ?= #93b69c
+// 錆青磁
+$color-sabiseiji ?= #a6c8b2
+// 緑青色
+$color-rokushoiro ?= #47885e
+// 千歳緑
+$color-chitosemidori ?= #316745
+// 若竹色
+$color-wakatakeiro ?= #68be8d
+// 緑
+$color-midori ?= #3eb370
+// 常磐色
+$color-tokiwairo ?= #007b43
+// 千草鼠
+$color-chigusanezu ?= #bed3ca
+// 千草色
+$color-chigusairo ?= #92b5a9
+// 青磁色
+$color-seijiiro ?= #7ebea5
+// 青竹色
+$color-aotakeiro ?= #7ebeab
+// 常磐緑
+$color-tokiwamidori ?= #028760
+// 木賊色
+$color-tokusairo ?= #3b7960
+// 天鵞絨
+$color-birodo ?= #2f5d50
+// 虫襖
+$color-mushiao ?= #3a5b52
+// 革色
+$color-kawairo ?= #475950
+// 深緑
+$color-fukamidori ?= #00552e
+// 鉄色
+$color-tetsuiro ?= #005243
+// 萌葱色
+$color-moegiiro ?= #006e54
+// 花緑青
+$color-hanarokusho ?= #00a381
+// 翡翠色
+$color-hisuiiro ?= #38b48b
+// 青緑
+$color-aomidori ?= #00a497
+// 水浅葱
+$color-mizuasagi ?= #80aba9
+// 錆浅葱
+$color-sabiasagi ?= #5c9291
+// 青碧
+$color-seiheki ?= #478384
+// 御召茶
+$color-omeshicha ?= #43676b
+// 湊鼠
+$color-minatonezumi ?= #80989b
+// 高麗納戸
+$color-korainando ?= #2c4f54
+// 百入茶
+$color-momoshiocha ?= #1f3134
+// 錆鼠
+$color-sabinezu ?= #47585c
+// 錆鉄御納戸
+$color-sabitetsuonando ?= #485859
+// 藍鼠
+$color-ainezu ?= #6c848d
+// 錆御納戸
+$color-sabionando ?= #53727d
+// 舛花色
+$color-masuhanairo ?= #5b7e91
+// 熨斗目花色
+$color-noshimehanairo ?= #426579
+// 御召御納戸
+$color-omeshionando ?= #4c6473
+// 鉄御納戸
+$color-tetsuonando ?= #455765
+// 紺鼠
+$color-konnezu ?= #44617b
+// 藍鉄
+$color-aitetsu ?= #393f4c
+// 青褐
+$color-aokachi ?= #393e4f
+// 褐返
+$color-kachikaeshi ?= #203744
+// 褐色
+$color-kachiiro ?= #4d4c61
+// 月白
+$color-geppaku ?= #eaf4fc
+// 白菫色
+$color-shirosumireiro ?= #eaedf7
+// 白花色
+$color-shirahanairo ?= #e8ecef
+// 藍白
+$color-aijiro ?= #ebf6f7
+// 白藍
+$color-shiraai ?= #c1e4e9
+// 水色
+$color-mizuiro ?= #bce2e8
+// 瓶覗
+$color-kamenozoki ?= #a2d7dd
+// 秘色色
+$color-hisokuiro ?= #abced8
+// 空色
+$color-sorairo ?= #a0d8ef
+// 勿忘草色
+$color-wasurenagusairo ?= #89c3eb
+// 青藤色
+$color-aofujiiro ?= #84a2d4
+// 白群
+$color-byakugun ?= #83ccd2
+// 浅縹
+$color-asahanada ?= #84b9cb
+// 薄花色
+$color-usuhanairo ?= #698aab
+// 納戸色
+$color-nandoiro ?= #008899
+// 浅葱色
+$color-asagiiro ?= #00a3af
+// 花浅葱
+$color-hanaasagi ?= #2a83a2
+// 新橋色
+$color-shimbashiiro ?= #59b9c6
+// 天色
+$color-amairosky ?= #2ca9e1
+// 露草色
+$color-tsuyukusairo ?= #38a1db
+// 青
+$color-ao ?= #0095d9
+// 薄藍
+$color-usuai ?= #0094c8
+// 縹色
+$color-hanadairo ?= #2792c3
+// 紺碧
+$color-kompeki ?= #007bbb
+// 薄群青
+$color-usugunjo ?= #5383c3
+// 薄花桜
+$color-usuhanazakura ?= #5a79ba
+// 群青色
+$color-gunjoiro ?= #4c6cb3
+// 杜若色
+$color-kakitsubatairo ?= #3e62ad
+// 瑠璃色
+$color-ruriiro ?= #1e50a2
+// 薄縹
+$color-usuhanada ?= #507ea4
+// 瑠璃紺
+$color-rurikon ?= #19448e
+// 紺瑠璃
+$color-konruri ?= #164a84
+// 藍色
+$color-aiiro ?= #165e83
+// 青藍
+$color-seiran ?= #274a78
+// 深縹
+$color-kokihanada ?= #2a4073
+// 紺色
+$color-koniro ?= #223a70
+// 紺青
+$color-konjo ?= #192f60
+// 留紺
+$color-tomekon ?= #1c305c
+// 濃藍
+$color-koiai ?= #0f2350
+// 鉄紺
+$color-tetsukon ?= #17184b
+// 漆黒
+$color-shikkoku ?= #0d0015
+// 淡藤色
+$color-awafujiiro ?= #bbc8e6
+// 藤色
+$color-fujiiro ?= #bbbcde
+// 紅掛空色
+$color-benikakesorairo ?= #8491c3
+// 紅碧
+$color-benimidori ?= #8491c3
+// 紺桔梗
+$color-konkikyo ?= #4d5aaf
+// 花色
+$color-hanairo ?= #4d5aaf
+// 紺藍
+$color-konai ?= #4a488e
+// 紅桔梗
+$color-benikikyo ?= #4d4398
+// 桔梗色
+$color-kikyoiro ?= #5654a2
+// 藤納戸
+$color-fujinando ?= #706caa
+// 紅掛花色
+$color-benikakehanairo ?= #68699b
+// 紫苑色
+$color-shioniro ?= #867ba9
+// 白藤色
+$color-shirafujiiro ?= #dbd0e6
+// 藤紫
+$color-fujimurasaki ?= #a59aca
+// 菫色
+$color-sumireiro ?= #7058a3
+// 青紫
+$color-aomurasaki ?= #674598
+// 菖蒲色
+$color-shobuiro ?= #674196
+// 竜胆色
+$color-rindoiro ?= #9079ad
+// 江戸紫
+$color-edomurasaki ?= #745399
+// 本紫
+$color-hommurasaki ?= #65318e
+// 葡萄色
+$color-budoiro ?= #522f60
+// 深紫
+$color-fukamurasaki ?= #493759
+// 紫黒
+$color-shikoku ?= #2e2930
+// 紫
+$color-murasaki ?= #884898
+// 薄葡萄
+$color-usubudo ?= #c0a2c7
+// 紫紺
+$color-shikon ?= #460e44
+// 暗紅色
+$color-ankoshoku ?= #74325c
+// 桑の実色
+$color-kuwanomiiro ?= #55295b
+// 古代紫
+$color-kodaimurasaki ?= #895b8a
+// 茄子紺
+$color-nasukon ?= #824880
+// 二藍
+$color-futaai ?= #915c8b
+// 京紫
+$color-kyomurasaki ?= #9d5b8b
+// 蒲葡
+$color-ebizome ?= #7a4171
+// 若紫
+$color-wakamurasaki ?= #bc64a4
+// 紅紫
+$color-benimurasaki ?= #b44c97
+// 梅紫
+$color-umemurasaki ?= #aa4c8f
+// 菖蒲色
+$color-ayameiro ?= #cc7eb1
+// 紅藤色
+$color-benifujiiro ?= #cca6bf
+// 浅紫
+$color-asamurasaki ?= #c4a3bf
+// 紫水晶
+$color-murasakisuisho ?= #e7e7eb
+// 薄梅鼠
+$color-usumenezu ?= #dcd6d9
+// 暁鼠
+$color-akatsukinezu ?= #d3cfd9
+// 牡丹鼠
+$color-botannezu ?= #d3ccd6
+// 霞色
+$color-kasumiiro ?= #c8c2c6
+// 藤鼠
+$color-fujinezu ?= #a6a5c4
+// 半色
+$color-hashitairo ?= #a69abd
+// 薄色
+$color-usuiro ?= #a89dac
+// 薄鼠
+$color-usunezu ?= #9790a4
+// 鳩羽鼠
+$color-hatobanezumi ?= #9e8b8e
+// 鳩羽色
+$color-hatobairo ?= #95859c
+// 桔梗鼠
+$color-kikyonezu ?= #95949a
+// 紫鼠
+$color-murasakinezu ?= #71686c
+// 葡萄鼠
+$color-budonezumi ?= #705b67
+// 濃色
+$color-kokiiro ?= #634950
+// 紫鳶
+$color-murasakitobi ?= #5f414b
+// 濃鼠
+$color-koinezu ?= #4f455c
+// 藤煤竹
+$color-fujisusutake ?= #5a5359
+// 滅紫
+$color-keshimurasaki ?= #594255
+// 紅消鼠
+$color-benikeshinezumi ?= #524748
+// 似せ紫
+$color-nisemurasaki ?= #513743
+// 灰黄緑
+$color-haikimidori ?= #e6eae3
+// 蕎麦切色
+$color-sobakiriiro ?= #d4dcd6
+// 薄雲鼠
+$color-usukumonezu ?= #d4dcda
+// 枯野色
+$color-karenoiro ?= #d3cbc6
+// 潤色
+$color-urumiiro ?= #c8c2be
+// 利休白茶
+$color-rikyushirocha ?= #b3ada0
+// 茶鼠
+$color-chanezumi ?= #a99e93
+// 胡桃染
+$color-kurumizome ?= #a58f86
+// 江戸鼠
+$color-edonezu ?= #928178
+// 煤色
+$color-susuiro ?= #887f7a
+// 丁子茶
+$color-chojicha ?= #b4866b
+// 柴染
+$color-fushizome ?= #b28c6e
+// 宗伝唐茶
+$color-sodenkaracha ?= #a16d5d
+// 砺茶
+$color-tonocha ?= #9f6f55
+// 煎茶色
+$color-senchairo ?= #8c6450
+// 銀煤竹
+$color-ginsusudake ?= #856859
+// 黄枯茶
+$color-kigaracha ?= #765c47
+// 煤竹色
+$color-susutakeiro ?= #6f514c
+// 焦茶
+$color-kogecha ?= #6f4b3e
+// 黒橡
+$color-kurotsurubami ?= #544a47
+// 憲法色
+$color-kempoiro ?= #543f32
+// 涅色
+$color-kuriiro ?= #554738
+// 檳榔子染
+$color-binrojizome ?= #433d3c
+// 黒鳶
+$color-kurotobi ?= #432f2f
+// 赤墨
+$color-akasumi ?= #3f312b
+// 黒紅
+$color-kurobeni ?= #302833
+// 白
+$color-shiro ?= #ffffff
+// 胡粉色
+$color-gofuniro ?= #fffffc
+// 卯の花色
+$color-unohanairo ?= #f7fcfe
+// 白磁
+$color-hakuji ?= #f8fbf8
+// 生成り色
+$color-kinariiro ?= #fbfaf5
+// 乳白色
+$color-nyuhakushoku ?= #f3f3f3
+// 白練
+$color-shironeri ?= #f3f3f2
+// 素色
+$color-soshoku ?= #eae5e3
+// 白梅鼠
+$color-shiraumenezu ?= #e5e4e6
+// 白鼠
+$color-shironezu ?= #dcdddd
+// 絹鼠
+$color-kinunezu ?= #dddcd6
+// 灰青
+$color-haiao ?= #c0c6c9
+// 銀鼠
+$color-ginnezu ?= #afafb0
+// 薄鈍
+$color-usunibi ?= #adadad
+// 薄墨色
+$color-usuzumiiro ?= #a3a3a2
+// 錫色
+$color-suzuiro ?= #9ea1a3
+// 素鼠
+$color-sunezumi ?= #9fa0a0
+// 鼠色
+$color-nezumiiro ?= #949495
+// 源氏鼠
+$color-genjinezu ?= #888084
+// 灰色
+$color-haiiro ?= #7d7d7d
+// 鉛色
+$color-namariiro ?= #7b7c7d
+// 鈍色
+$color-nibiiro ?= #727171
+// 墨
+$color-sumi ?= #595857
+// 丼鼠
+$color-dobunezumi ?= #595455
+// 消炭色
+$color-keshizumiiro ?= #524e4d
+// 藍墨茶
+$color-aisumicha ?= #474a4d
+// 羊羹色
+$color-yokaniro ?= #383c3c
+// 蝋色
+$color-roiro ?= #2b2b2b
+// 黒
+$color-kuro ?= #2b2b2b
+// 烏羽色
+$color-karasubairo ?= #180614
+// 鉄黒
+$color-tetsuguro ?= #281a14
+// 濡羽色
+$color-nurebairo ?= #000b00
+// 黒檀
+$color-kokutan ?= #250d00
+// 憲法黒茶
+$color-kempokurocha ?= #241a08
+// 暗黒色
+$color-ankokushoku ?= #16160e
+
+/** Basic Colors */
+$color-black ?= hsl(0, 0%, 0%)
+$color-black-bis ?= hsl(0, 0%, 7%)
+$color-black-ter ?= hsl(0, 0%, 14%)
+$color-grey-darker ?= hsl(0, 0%, 21%)
+$color-grey-dark ?= hsl(0, 0%, 29%)
+$color-grey ?= hsl(0, 0%, 48%)
+$color-grey-light ?= hsl(0, 0%, 71%)
+$color-grey-lighter ?= hsl(0, 0%, 86%)
+$color-white-ter ?= hsl(0, 0%, 96%)
+$color-white-bis ?= hsl(0, 0%, 98%)
+$color-white ?= hsl(0, 0%, 100%)
+$color-orange ?= $color-daidaiiro
+$color-yellow ?= $color-kiiro
+$color-green ?= $color-midori
+$color-turquoise ?= hsl(171, 100%, 41%)
+$color-cyan ?= hsl(204, 86%, 53%)
+$color-blue ?= $color-ao
+$color-purple ?= $color-murasaki
+$color-red ?= $color-aka
+
+/** Semantic Colors */
+$color-primary ?= $color-shobuiro
+$color-success ?= $color-hisuiiro
+$color-info ?= $color-amairosky
+$color-warning ?= $color-tampopoiro
+$color-danger ?= $color-ake
+$color-link ?= $color-ruriiro
+
+$colors = {
+  black: $color-black,
+  grey: $color-grey,
+  white: $color-white,
+  primary: $color-primary,
+  success: $color-success,
+  info: $color-info,
+  warning: $color-warning,
+  danger: $color-danger,
+  link: $color-link
+}

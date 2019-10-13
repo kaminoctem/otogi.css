@@ -1,0 +1,15 @@
+/**
+ * elements/label.styl
+ * @author kaminoctem
+ */
+
+$label-forecolor ?= $color-grey-darker
+$label-font-weight ?= $font-weight-bold
+
+.label
+  color: $label-forecolor
+  display: block
+  font-size: $font-size-normal
+  font-weight: $label-font-weight
+  &:not(:last-child)
+    margin-bottom: 0.5em

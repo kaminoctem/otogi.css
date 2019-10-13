@@ -1,0 +1,18 @@
+/**
+ * layouts/layer.styl
+ * @author kaminoctem
+ */
+
+.layer-folder
+  display: flex
+  flex-direction: column
+  height: 100%
+  position: relative
+  width: 100%
+
+  for index in (1..$layer-max-layer-count)
+    &>.layer-{index}
+      height: inherit
+      position: absolute
+      width: inherit
+      z-index: index

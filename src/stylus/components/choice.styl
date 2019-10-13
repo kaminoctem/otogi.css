@@ -1,0 +1,45 @@
+/**
+ * components/messagewindow.styl
+ * @author kaminoctem
+ */
+
+/** Variables */
+$choices-backcolor ?= transparent
+$choice-normal-backcolor ?= alpha($colors['primary'], 0.7)
+$choice-hover-backcolor ?= lightness($choice-normal-backcolor, 30%)
+$choice-checked-backcolor ?= lightness($choice-normal-backcolor, 70%)
+
+/** Styles */
+.choices
+  background-color: $choices-backcolor
+  list-style: none
+  margin: 0
+  padding: 0
+  // z-index: $layer-max-layer-count + 1
+
+.choice
+  background-color: $choice-normal-backcolor
+  margin: 0.5em 0
+  width: 100%;
+
+  &>button,[type="button"],[type="submit"],[type="reset"]
+    background-color: $choice-normal-backcolor
+    height: auto
+    text-align: left
+    padding: 0.75em
+    width: 100%
+    &:hover
+      background-color: $choice-hover-backcolor
+
+  &>[type="radio"]
+    display: none
+
+  &>[type="radio"] + label
+    background-color: $choice-normal-backcolor
+    padding: 0.75em
+    display: block
+    &:hover
+      background-color: $choice-hover-backcolor
+
+  &>[type="radio"]:checked + label
+    background-color: $choice-checked-backcolor

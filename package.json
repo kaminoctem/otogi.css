@@ -1,0 +1,48 @@
+{
+  "name": "otogi.css",
+  "version": "0.0.0",
+  "description": "A Fixed Aspect Ratio CSS framework.",
+  "main": "stylus/otogi.styl",
+  "unpkg": "css/otogi.css",
+  "scripts": {
+    "build": "npm run build-format && npm run build-lint && npm run build-clean && npm run build-stylus && npm run build-autoprefix && npm run build-cleancss",
+    "build-clean": "rimraf dist/css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output dist/css/otogi.css dist/css/otogi.css",
+    "build-cleancss": "cleancss -o dist/css/otogi.min.css dist/css/otogi.css",
+    "build-format": "stylus-supremacy format src/stylus/**/*.styl --options .stylintrc",
+    "build-lint": "stylint src/stylus --strict",
+    "build-stylus": "stylus --include-css src/stylus/otogi.styl -o dist/css/otogi.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaminoctem/otogi.css.git"
+  },
+  "keywords": [
+    "css",
+    "css-framework",
+    "framework",
+    "stylus"
+  ],
+  "author": "@kaminoctem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaminoctem/otogi.css/issues"
+  },
+  "homepage": "https://github.com/kaminoctem/otogi.css#readme",
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "clean-css-cli": "^4.3.0",
+    "normalize.css": "^8.0.1",
+    "postcss-cli": "^6.1.3",
+    "rimraf": "^3.0.0",
+    "semver": "^6.3.0",
+    "stylint": "^2.0.0",
+    "stylus": "^0.54.5",
+    "stylus-supremacy": "^2.12.7"
+  }
+}

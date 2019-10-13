@@ -1,0 +1,38 @@
+/**
+ * utils/mixins.styl
+ * @author kaminoctem
+ */
+
+clearfix()
+  &::after
+    clear: both
+    content: " "
+    display: block
+
+/** Media mixins */
+mobile()
+  @media screen and (max-width: $breakpoint-tablet - 1px)
+    { block }
+
+tablet()
+  @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1px)
+    { block }
+
+desktop()
+  @media screen and (min-width: $breakpoint-desktop) and (max-width: $breakpoint-widescreen - 1px)
+    { block }
+
+widescreen()
+  @media screen and (min-width: $breakpoint-widescreen) and (max-width: $breakpoint-fullhd - 1px)
+    { block }
+
+fullhd()
+  @media screen and (min-width: $breakpoint-fullhd)
+    { block }
+
+unselectable()
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
