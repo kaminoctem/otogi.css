@@ -1,0 +1,34 @@
+/**
+ * containers/otogiroot.styl
+ * @author kaminoctem
+ */
+
+$otogiroot-backcolor ?= $color-white
+$otogiroot-forecolor ?= $color-black
+
+$otogiroot-aspect-ratio-x ?= $aspect-ratio-x
+$otogiroot-aspect-ratio-y ?= $aspect-ratio-y
+
+.otogiroot
+  background-color: $otogiroot-backcolor
+  bottom: 0px
+  color: $otogiroot-forecolor
+  left: 0px
+  margin: auto
+  overflow: hidden
+  position: absolute
+  right: 0px
+  top: 0px
+
+/** maintain aspect ratio */
+@media (min-width: 100vh * ($otogiroot-aspect-ratio-x / $otogiroot-aspect-ratio-y))
+  .otogiroot
+    font-size: 3vh
+    height: 100vh
+    width: 100vh * ($otogiroot-aspect-ratio-x / $otogiroot-aspect-ratio-y)
+
+@media (min-height: 100vw * ($otogiroot-aspect-ratio-y / $otogiroot-aspect-ratio-x))
+  .otogiroot
+    font-size: 3vw * ($otogiroot-aspect-ratio-y / $otogiroot-aspect-ratio-x)
+    height: 100vw * ($otogiroot-aspect-ratio-y / $otogiroot-aspect-ratio-x)
+    width: 100vw
