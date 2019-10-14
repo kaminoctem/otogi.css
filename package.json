@@ -1,6 +1,6 @@
 {
   "name": "otogi.css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Fixed Aspect Ratio CSS framework.",
   "main": "stylus/otogi.styl",
   "unpkg": "css/otogi.css",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/kaminoctem/otogi.css#readme",
   "files": [
+    "dist",
     "src",
     "LICENSE",
     "README.md"
