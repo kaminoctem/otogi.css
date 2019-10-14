@@ -3,12 +3,14 @@
  * @author kaminoctem
  */
 
+/** variable */
 $otogiroot-backcolor ?= $color-white
 $otogiroot-forecolor ?= $color-black
 
 $otogiroot-aspect-ratio-x ?= $aspect-ratio-x
 $otogiroot-aspect-ratio-y ?= $aspect-ratio-y
 
+/** style */
 .otogiroot
   background-color: $otogiroot-backcolor
   bottom: 0px
@@ -20,7 +22,7 @@ $otogiroot-aspect-ratio-y ?= $aspect-ratio-y
   right: 0px
   top: 0px
 
-/** maintain aspect ratio */
+/** media */
 @media (min-width: 100vh * ($otogiroot-aspect-ratio-x / $otogiroot-aspect-ratio-y))
   .otogiroot
     font-size: 3vh

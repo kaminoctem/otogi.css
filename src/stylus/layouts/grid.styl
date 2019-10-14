@@ -3,8 +3,6 @@
  * @author kaminoctem
  */
 
-
-
 .grid
   display: block
 
@@ -12,19 +10,22 @@
   display: flex
   flex-wrap: wrap
 
-.column
+column()
   display: block
   flex-basis: 0
   flex-grow: 1
   flex-shrink: 1
   max-width: 100%
   position: relative
+
+.column
+  column()
   &.is-full
     flex: none
     width: 100%
 
 for num in (1..$grid-column-count)
-  .column-{num}
-    @extend.column
+  &.column-{num}
+    column()
     width: percentage(num / $grid-column-count)
     flex-basis: percentage(num / $grid-column-count)

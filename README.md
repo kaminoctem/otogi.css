@@ -1,4 +1,4 @@
-# Otogi.css[WIP]
+# Otogi.css
 
 A Fixed Aspect Ratio CSS framework.
 

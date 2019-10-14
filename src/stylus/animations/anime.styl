@@ -1,0 +1,46 @@
+/**
+ * animations/anime.styl
+ * @author kaminoctem
+ */
+
+/** variable */
+$anime-speed-heavy ?= 4s
+$anime-speed-slower ?= 3s
+$anime-speed-slow ?= 2s
+$anime-speed-fast ?= 750ms
+$anime-speed-faster ?= 500ms
+$anime-speed-flash ?= 250ms
+
+/** style */
+.anime
+  animation-fill-mode: both
+
+  &.infinite
+    animation-iteration-count: infinite
+
+  &.heavy
+    animation-duration: $anime-speed-heavy
+
+  &.slower
+    animation-duration: $anime-speed-slower
+
+  &.slow
+    animation-duration: $anime-speed-slow
+
+  &.fast
+    animation-duration: $anime-speed-fast
+
+  &.faster
+    animation-duration: $anime-speed-faster
+
+  &.flash
+    animation-duration: $anime-speed-flash
+
+  for sec in (1..10)
+    &.delay-{sec}
+      animation-delay: 1s * sec
+
+  +reducemotion()
+    animation-duration: 1ms !important
+    transition-duration: 1ms !important
+    animation-iteration-count: 1 !important

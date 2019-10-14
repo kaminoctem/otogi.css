@@ -3,14 +3,14 @@
  * @author kaminoctem
  */
 
-/** Color */
+/** color */
 for key, value in $colors
   .forecolor-{key}
     color: value !important
   .backcolor-{key}
     background-color: value !important
 
-/** Typography */
+/** typography */
 .is-italic
   font-style: italic !important
 
@@ -26,51 +26,72 @@ for key, value in $colors
 .is-uppercase
   text-transform: uppercase !important
 
+/** spacing */
 for num in (1..9)
   .padding-0{num}
-    padding: 0.1em * num
+    padding: 0.1em * num !important
   .padding-left-0{num}
-    padding-left: 0.1em * num
+    padding-left: 0.1em * num !important
   .padding-top-0{num}
-    padding-top: 0.1em * num
+    padding-top: 0.1em * num !important
   .padding-right-0{num}
-    padding-right: 0.1em * num
+    padding-right: 0.1em * num !important
   .padding-bottom-0{num}
-    padding-bottom: 0.1em * num
+    padding-bottom: 0.1em * num !important
   .margin-0{num}
-    margin: 0.1em * num
+    margin: 0.1em * num !important
   .margin-left-0{num}
-    margin-left: 0.1em * num
+    margin-left: 0.1em * num !important
   .margin-top-0{num}
-    margin-top: 0.1em * num
+    margin-top: 0.1em * num !important
   .margin-right-0{num}
-    margin-right: 0.1em * num
+    margin-right: 0.1em * num !important
   .margin-bottom-0{num}
-    margin-bottom: 0.1em * num
+    margin-bottom: 0.1em * num !important
 
 for num in (1..9)
   .padding-{num}
-    padding: 1em * num
+    padding: 1em * num !important
   .padding-left-{num}
-    padding-left: 1em * num
+    padding-left: 1em * num !important
   .padding-top-{num}
-    padding-top: 1em * num
+    padding-top: 1em * num !important
   .padding-right-{num}
-    padding-right: 1em * num
+    padding-right: 1em * num !important
   .padding-bottom-{num}
-    padding-bottom: 1em * num
+    padding-bottom: 1em * num !important
   .margin-{num}
-    margin: 1em * num
+    margin: 1em * num !important
   .margin-left-{num}
-    margin-left: 1em * num
+    margin-left: 1em * num !important
   .margin-top-{num}
-    margin-top: 1em * num
+    margin-top: 1em * num !important
   .margin-right-{num}
-    margin-right: 1em * num
+    margin-right: 1em * num !important
   .margin-bottom-{num}
-    margin-bottom: 1em * num
+    margin-bottom: 1em * num !important
 
-/** Other */
+/** sizing */
+for num in (0..100)
+  .size-{num}
+    height: 1% * num !important
+    width: 1% * num !important
+  .height-{num}
+    height: 1% * num !important
+  .width-{num}
+    width: 1% * num !important
+
+for num in (0..100)
+  .top-{num},.top-plus-{num}
+    top: 1% * num !important
+  .top-minus-{num}
+    top: -1% * num !important
+  .left-{num},.left-plus-{num}
+    left: 1% * num !important
+  .left-minus-{num}
+    left: -1% * num !important
+
+/** other */
 .is-marginless
   margin: 0 !important
 

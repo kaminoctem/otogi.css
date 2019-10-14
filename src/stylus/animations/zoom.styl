@@ -1,0 +1,35 @@
+/**
+ * animations/zoom.styl
+ * @author kaminoctem
+ */
+
+
+/** zoom-in */
+/** style */
+.zoom-in
+  animation-name: zoom-in
+
+/** keyframes */
+@keyframes zoom-in
+  0%
+    opacity: 0
+    transform: scale3d(0.5, 0.5, 0.5)
+  50%
+    opacity: 1
+  100%
+    opacity: 1
+
+/** zoom-out */
+/** style */
+.zoom-out
+  animation-name: zoom-out
+
+/** keyframes */
+@keyframes zoom-out
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+    transform: scale3d(0.5, 0.5, 0.5)
+  100%
+    opacity: 0

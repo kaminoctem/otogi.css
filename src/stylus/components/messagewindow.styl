@@ -3,29 +3,27 @@
  * @author kaminoctem
  */
 
-/** Variables */
+/** variable */
+$messagewindow-forecolor ?= $color-white
+$messagewindow-backcolor ?= alpha($color-black, 50%)
 $messagewindow-height ?= percentage(1 / 3)
 $messagewindow-header-font-size ?= $font-size-normal
 $messagewindow-header-font-weight ?= $font-weight-medium
-$messagewindow-header-height ?= 16%
 $messagewindow-body-font-size ?= $font-size-normal
 $messagewindow-body-font-weight ?= $font-weight-normal
-$messagewindow-body-height ?= 68%
 $messagewindow-footer-font-size ?= $font-size-small
 $messagewindow-footer-font-weight ?= $font-weight-normal
-$messagewindow-footer-height ?= 16%
 $messagewindow-container-width ?= 90%
 
-/** Styles */
+/** style */
 .messagelayer
   display: block
   margin: 0
   height: 100%
 
 .messagewindow
-  background-image: none
-  background-size: cover
-  background-repeat: no-repeat
+  color: $messagewindow-forecolor
+  background-color: $messagewindow-backcolor
   bottom: 0px
   display: block
   height: $messagewindow-height
@@ -52,7 +50,6 @@ $messagewindow-container-width ?= 90%
     display: block
     font-size: $messagewindow-header-font-size
     font-weight: $messagewindow-header-font-weight
-    height: $messagewindow-header-height
     overflow: hidden
     width: 100%
 
@@ -60,7 +57,6 @@ $messagewindow-container-width ?= 90%
     display: block
     font-size: $messagewindow-body-font-size
     font-weight: $messagewindow-body-font-weight
-    height: $messagewindow-body-height
     overflow: hidden
     width: 100%
 
@@ -68,7 +64,6 @@ $messagewindow-container-width ?= 90%
     display: block
     font-size: $messagewindow-footer-font-size
     font-weight: $messagewindow-footer-font-weight
-    height: $messagewindow-footer-height
     overflow: hidden
     width: 100%
 
@@ -85,3 +80,7 @@ $messagewindow-container-width ?= 90%
   &.is-fullheight
     height: 100%
     top: 0px
+  &.is-fullheight-with-margin
+    height: 90%
+    top: 0px
+    width: 94%

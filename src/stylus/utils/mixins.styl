@@ -9,7 +9,6 @@ clearfix()
     content: " "
     display: block
 
-/** Media mixins */
 mobile()
   @media screen and (max-width: $breakpoint-tablet - 1px)
     { block }
@@ -28,6 +27,10 @@ widescreen()
 
 fullhd()
   @media screen and (min-width: $breakpoint-fullhd)
+    { block }
+
+reducemotion()
+  @media (print), (prefers-reduced-motion: reduce)
     { block }
 
 unselectable()
