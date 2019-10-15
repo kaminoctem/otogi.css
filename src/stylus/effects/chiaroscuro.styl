@@ -1,0 +1,36 @@
+/**
+ * effects/chiaroscuro.styl
+ * @author kaminoctem
+ */
+
+/** mixin */
+chiaroscuro(num)
+  filter: sepia(10% + (1% * num)) brightness(100% - (3% * num)) contrast(100% + (20% * num))
+
+for num in (1..10)
+  /** variable */
+  $keyframe-name-cresc = chiaroscuro- + num + -cresc
+  $keyframe-name-decresc = chiaroscuro- + num + -decresc
+
+  /** style */
+  .chiaroscuro-{num}
+    chiaroscuro(num)
+
+  .{$keyframe-name-cresc}
+    animation-name: $keyframe-name-cresc
+
+  .{$keyframe-name-decresc}
+    animation-name: $keyframe-name-decresc
+
+  /** keyframes */
+  @keyframes {$keyframe-name-cresc}
+    0%
+      filter: none
+    100%
+      chiaroscuro(num)
+
+  @keyframes {$keyframe-name-decresc}
+    0%
+      chiaroscuro(num)
+    100%
+      filter: none
