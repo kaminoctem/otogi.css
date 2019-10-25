@@ -35,6 +35,23 @@ $animation-speed-flash ?= 250ms
 
   &.flash
     animation-duration: $animation-speed-flash
+  /** direction */
+  &.alternate
+    animation-direction: alternate
+  &.reverse
+    animation-direction: reverse
+
+  /** timing-function */
+  &.ease
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0)
+  &.linear
+    animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0)
+  &.ease-in
+    animation-timing-function: cubic-bezier(0.42, 0.0, 1.0, 1.0)
+  &.ease-out
+    animation-timing-function: cubic-bezier(0.0, 0.0, 0.58, 1.0)
+  &.ease-in-out
+    animation-timing-function: cubic-bezier(0.42, 0.0, 0.58, 1.0)
 
   for sec in (1..10)
     &.delay-{sec}
