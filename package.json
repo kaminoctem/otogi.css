@@ -2,16 +2,16 @@
   "name": "otogi.css",
   "version": "0.0.3",
   "description": "A Fixed Aspect Ratio CSS framework.",
-  "main": "stylus/otogi.styl",
-  "unpkg": "css/otogi.css",
+  "main": "src/stylus/otogi.styl",
+  "unpkg": "dist/css/otogi.css",
   "scripts": {
-    "build": "npm run build-format && npm run build-lint && npm run build-clean && npm run build-stylus && npm run build-autoprefix && npm run build-cleancss",
-    "build-clean": "rimraf dist/css",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output dist/css/otogi.css dist/css/otogi.css",
-    "build-cleancss": "cleancss -o dist/css/otogi.min.css dist/css/otogi.css",
-    "build-format": "stylus-supremacy format src/stylus/**/*.styl --options .stylintrc",
-    "build-lint": "stylint src/stylus --strict",
-    "build-stylus": "stylus --include-css src/stylus/otogi.styl -o dist/css/otogi.css"
+    "build": "npm run format && npm run lint && npm run clean && npm run stylus && npm run autoprefix && npm run cleancss",
+    "clean": "rimraf dist/css",
+    "autoprefix": "postcss --use autoprefixer --map false --output dist/css/otogi.css dist/css/otogi.css",
+    "cleancss": "cleancss -o dist/css/otogi.min.css dist/css/otogi.css",
+    "format": "stylus-supremacy format src/stylus/**/*.styl --options .stylintrc",
+    "lint": "stylint src/stylus --strict",
+    "stylus": "stylus --include-css src/stylus/otogi.styl -o dist/css/otogi.css"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
   "files": [
     "dist",
     "src",
+    "CHANGELOG.md",
     "LICENSE",
     "README.md"
   ],

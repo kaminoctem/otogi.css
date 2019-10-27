@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#674196",
+    "activityBar.foreground": "#fabf14",
+    "tab.activeBorder": "#f8fbf8",
+    "titleBar.activeBackground": "#674196",
+    "titleBar.activeForeground": "#fabf14",
+    "titleBar.inactiveBackground": "#442b63",
+    "titleBar.inactiveForeground": "#d9a62e",
+  }
+}
