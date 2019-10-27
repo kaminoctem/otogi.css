@@ -72,7 +72,7 @@ for num in (1..9)
     margin-bottom: 1em * num !important
 
 /** sizing */
-for num in (0..100)
+for num in (0..400)
   .size-{num}
     height: 1% * num !important
     width: 1% * num !important
@@ -81,14 +81,15 @@ for num in (0..100)
   .width-{num}
     width: 1% * num !important
 
+/** coordinate */
 for num in (0..100)
-  .top-{num},.top-plus-{num}
+  .top-{num},.top-plus-{num},.y-{num},.y-plus-{num}
     top: 1% * num !important
-  .top-minus-{num}
+  .top-minus-{num},.y-minus-{num}
     top: -1% * num !important
-  .left-{num},.left-plus-{num}
+  .left-{num},.left-plus-{num},.x-{num},.x-plus-{num}
     left: 1% * num !important
-  .left-minus-{num}
+  .left-minus-{num},.x-minus-{num}
     left: -1% * num !important
 
 /** other */
@@ -103,3 +104,6 @@ for num in (0..100)
 
 .is-shadowless
   box-shadow: none !important
+
+.is-unselectable
+  user-select: none

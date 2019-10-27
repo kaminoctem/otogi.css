@@ -1,10 +1,10 @@
-# Otogi.css
+# Otogi.css👸🏻👘
 
-A Fixed Aspect Ratio CSS framework.
+🧝A Fixed Aspect Ratio CSS framework.🧚‍
 
 ## Installation
 
-### NPM
+### npm
 
 ```
 npm install otogi.css
@@ -15,6 +15,16 @@ npm install otogi.css
 ```
 yarn add otogi.css
 ```
+
+## Documentation
+
+[English](docs/en/README.md)
+
+[日本語](docs/ja/README.md)
+
+## Contributing
+
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ## License
 

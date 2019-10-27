@@ -1,0 +1,58 @@
+/**
+ * effects/grisaille
+ * @author kaminoctem
+ */
+
+/** mixin */
+grisaille-sepia()
+  filter: sepia(100%)
+
+grisaille-gray()
+  filter: grayscale(100%)
+
+/** style */
+.grisaille,
+.grisaille-sepia
+  grisaille-sepia()
+
+.grisaille-gray
+  grisaille-gray()
+
+.grisaille-cresc,
+.grisaille-sepia-cresc
+  animation-name: grisaille-sepia-cresc
+
+.grisaille-decresc,
+.grisaille-sepia-decresc
+  animation-name: grisaille-sepia-decresc
+
+.grisaille-gray-cresc
+  animation-name: grisaille-gray-cresc
+
+.grisaille-gray-decresc
+  animation-name: grisaille-gray-decresc
+
+/** keyframes */
+@keyframes grisaille-sepia-cresc
+  0%
+    filter: none
+  100%
+    grisaille-sepia()
+
+@keyframes grisaille-sepia-decresc
+  0%
+    grisaille-sepia()
+  100%
+    filter: none
+
+@keyframes grisaille-gray-cresc
+  0%
+    filter: none
+  100%
+    grisaille-gray()
+
+@keyframes grisaille-gray-decresc
+  0%
+    grisaille-gray()
+  100%
+    filter: none

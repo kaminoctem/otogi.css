@@ -1,0 +1,31 @@
+/**
+ * effects/negative
+ * @author kaminoctem
+ */
+
+/** mixin */
+negative()
+  filter: invert(100%)
+
+/** style */
+.negative
+  negative()
+
+.negative-cresc
+  animation-name: negative-cresc
+
+.negative-decresc
+  animation-name: negative-decresc
+
+/** keyframes */
+@keyframes negative-cresc
+  0%
+    filter: none
+  100%
+    negative()
+
+@keyframes negative-decresc
+  0%
+    negative()
+  100%
+    filter: none

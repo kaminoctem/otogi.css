@@ -1,0 +1,38 @@
+
+/**
+ * effects/gaussianblur.styl
+ * @author kaminoctem
+ */
+
+/** style */
+
+gaussianblur(num)
+  filter: blur(0.05em * num)
+
+for num in (1..10)
+  /** variable */
+  $keyframe-name-cresc = gaussianblur- + num + -cresc
+  $keyframe-name-decresc = gaussianblur- + num + -decresc
+
+  /** style */
+  .gaussianblur-{num}
+    gaussianblur(num)
+
+  .{$keyframe-name-cresc}
+    animation-name: $keyframe-name-cresc
+
+  .{$keyframe-name-decresc}
+    animation-name: $keyframe-name-decresc
+
+  /** keyframes */
+  @keyframes {$keyframe-name-cresc}
+    0%
+      filter: none
+    100%
+      gaussianblur(num)
+
+  @keyframes {$keyframe-name-decresc}
+    0%
+      gaussianblur(num)
+    100%
+      filter: none
