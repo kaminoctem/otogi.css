@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `CODE_OF_CONDUCT.md`
 - `CHANGELOG.md`
 - `.github/CONTRIBUTING.md`
-- `.github/ISSUE_TEMPLATE.md`
+- `.github/ISSUE_TEMPLATE`
 - `.github/PULL_REQUEST_TEMPLATE.md`
 - documentation
 - **effects**

@@ -1,11 +1,12 @@
-
 ## Overview of the problem
 
-<!-- 🐛Bug -->
+<!-- 🐛Bug overview -->
 
 <!-- 🤔you need support? please use Stack Overflow! -->
 
 ## Description
+
+<!-- 🐛Bug detail -->
 
 ## Steps to Reproduce
 
@@ -29,8 +30,7 @@
   - [ ] Safari
 
 - OS
-  - [ ] All of them
-  - [ ] Chrome
-  - [ ] Edge
-  - [ ] Firefox
-  - [ ] Safari
+  [e.g. Windows 10, macOS Catalina, Android Pie...]
+
+- Device
+  [e.g. iPhone7, iPad Pro...]
