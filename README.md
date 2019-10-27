@@ -18,9 +18,9 @@ yarn add otogi.css
 
 ## Documentation
 
-[English](docs/en/README.md) - work in progress
+[English](docs/en/README.md)
 
-[日本語](docs/ja/README.md) - work in progress
+[日本語](docs/ja/README.md)
 
 ## Contributing
 
