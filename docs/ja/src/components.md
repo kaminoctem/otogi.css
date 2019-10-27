@@ -10,7 +10,7 @@
 
 `background`は***otogi.css***の基本コンポーネントの一つです。
 
-背景を画面に設定します。
+画面に背景を設定します。
 
 `background`は*layouts*の`layer`と組み合わせて使用します。
 
@@ -73,7 +73,7 @@
 
 `messagewindow`は***otogi.css***の基本コンポーネントの一つです。
 
-画面にキャラクターを配置します。
+画面にメッセージウィンドウを配置します。
 
 `messagewindow`は*layouts*の`layer`と組み合わせて使用します。
 

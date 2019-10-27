@@ -5,9 +5,7 @@
 **animations** provides simple animation effects.
 
 ```html
-<div class="animation infinite">
-
-</div>
+<div class="animation infinite"></div>
 ```
 
 ## fade
